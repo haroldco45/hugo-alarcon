@@ -1,0 +1,15 @@
+{
+  "name": "Hugo Alarcón Ramírez · Consultor de afiliaciones",
+  "short_name": "Hugo Alarcón",
+  "description": "Contacto directo con Hugo Alarcón Ramírez, consultor de atracción de nuevos clientes. Afiliación de persona natural y jurídica a la caja de compensación.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f4d3a",
+  "theme_color": "#0f4d3a",
+  "lang": "es-CO",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

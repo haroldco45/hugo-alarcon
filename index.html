@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hugo Alarcón Ramírez · Consultor de afiliaciones</title>
+<meta name="description" content="Hugo Alarcón Ramírez te acompaña en la afiliación de persona natural y persona jurídica a la caja de compensación familiar. Escríbele por WhatsApp.">
+<meta name="theme-color" content="#0f4d3a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+
+<!-- Vista previa del enlace (cambia la URL si el sitio de Netlify queda con otro nombre) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hugo Alarcón Ramírez · Consultor de afiliaciones">
+<meta property="og:description" content="Te acompaño en la afiliación de tu empresa o como persona natural. Subsidios, recreación, turismo, educación, vivienda y crédito.">
+<meta property="og:url" content="https://hugo-alarcon.netlify.app/">
+<meta property="og:image" content="https://hugo-alarcon.netlify.app/vista-previa.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hugo-alarcon.netlify.app/vista-previa.jpg">
+
+<style>
+:root{
+  --pine:#0f4d3a; --pine2:#0a3a2b; --leaf:#2f9e6e; --mint:#7fc7a4; --lime:#cfe04a; --lime2:#e6f08f;
+  --paper:#f6f8f1; --ink:#12241c; --soft:#5b6f65;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+
+/* Barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(15,77,58,.96);backdrop-filter:blur(8px);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:54px}
+.top b{font-size:15px;letter-spacing:.3px}
+.lang{display:flex;border:1px solid rgba(255,255,255,.35);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:#fff;font:inherit;font-size:13px;font-weight:700;padding:6px 13px;cursor:pointer}
+.lang button.on{background:var(--lime);color:var(--pine2)}
+
+/* Portada */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(160deg,var(--pine) 0%,#17694d 55%,var(--leaf) 100%);padding:34px 0 44px}
+.ring{position:absolute;border-radius:50%;border:26px solid var(--lime);opacity:.9;animation:float 9s ease-in-out infinite}
+.ring.a{width:190px;height:190px;top:-80px;right:-50px}
+.ring.b{width:120px;height:120px;bottom:-50px;left:-40px;border-color:var(--mint);border-width:18px;animation-delay:-4s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(16px) rotate(8deg)}}
+.hero .wrap{position:relative;display:grid;gap:22px;justify-items:center;text-align:center}
+.foto{width:190px;height:190px;border-radius:50%;overflow:hidden;border:5px solid var(--lime);box-shadow:0 14px 40px rgba(0,0,0,.35);animation:pop .8s cubic-bezier(.2,1.4,.4,1) both}
+.foto img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.soy{font-size:15px;letter-spacing:5px;font-weight:300}
+h1{font-size:clamp(34px,10vw,54px);line-height:.98;font-weight:900;letter-spacing:-.5px}
+h1 span{display:block;font-size:.62em;font-weight:800;margin-top:6px}
+.rol{font-size:17px;opacity:.95}
+.gira{font-size:18px;font-weight:700;min-height:28px}
+.gira em{font-style:normal;color:var(--lime);display:inline-block;transition:opacity .35s,transform .35s}
+.gira em.out{opacity:0;transform:translateY(10px)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.btn{display:inline-block;text-decoration:none;font-weight:800;font-size:16px;padding:14px 24px;border-radius:999px;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:transform .15s}
+.btn:active{transform:scale(.96)}
+.btn.lime{background:var(--lime);color:var(--pine2);animation:pulse 2.4s infinite}
+.btn.line{border-color:rgba(255,255,255,.7);color:#fff;background:transparent}
+.btn.pine{background:var(--pine);color:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(207,224,74,.6)}70%{box-shadow:0 0 0 16px rgba(207,224,74,0)}100%{box-shadow:0 0 0 0 rgba(207,224,74,0)}}
+
+/* Cinta en movimiento */
+.cinta{background:var(--lime);color:var(--pine2);overflow:hidden;white-space:nowrap;font-weight:900;font-size:15px;letter-spacing:2px;padding:11px 0}
+.cinta div{display:inline-block;animation:corre 22s linear infinite}
+.cinta span{margin:0 18px}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+section{padding:44px 0}
+h2{font-size:26px;line-height:1.15;font-weight:900;color:var(--pine);margin-bottom:8px}
+.sub{color:var(--soft);margin-bottom:22px}
+.rev{opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}
+.rev.in{opacity:1;transform:none}
+
+/* Acompañamiento */
+.dos{display:grid;gap:14px}
+.card{background:#fff;border-radius:20px;padding:22px;border-left:8px solid var(--lime);box-shadow:0 6px 22px rgba(15,77,58,.08)}
+.card h3{font-size:19px;color:var(--pine);margin-bottom:4px}
+.card p{color:var(--soft);font-size:15px;margin-bottom:14px}
+.card .btn{padding:10px 18px;font-size:14px}
+
+/* Beneficios */
+.verde{background:var(--pine);color:#fff}
+.verde h2{color:#fff}.verde .sub{color:var(--lime2)}
+.ben{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ben button{font:inherit;text-align:left;color:#fff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:16px;cursor:pointer;transition:background .25s,transform .25s}
+.ben button .n{display:block;font-size:13px;font-weight:800;color:var(--lime);letter-spacing:2px}
+.ben button .t{display:block;font-size:17px;font-weight:900;letter-spacing:.5px;text-transform:uppercase;margin-top:2px}
+.ben button .d{display:block;font-size:14px;line-height:1.4;max-height:0;overflow:hidden;opacity:0;transition:max-height .35s,opacity .35s,margin .35s}
+.ben button.on{background:var(--lime);color:var(--pine2);transform:scale(1.02)}
+.ben button.on .n{color:var(--pine)}
+.ben button.on .d{max-height:120px;opacity:1;margin-top:8px}
+.mas{margin-top:18px;text-align:center;font-weight:900;font-size:18px;color:var(--lime);letter-spacing:1px}
+
+/* Volante */
+.volante{border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(15,77,58,.2);max-width:420px;margin:0 auto}
+
+/* Formulario */
+form{background:#fff;border-radius:22px;padding:22px;box-shadow:0 6px 22px rgba(15,77,58,.08);display:grid;gap:14px}
+label{font-size:14px;font-weight:700;color:var(--pine);display:grid;gap:6px}
+input,select{font:inherit;font-size:16px;padding:13px 14px;border:2px solid #d9e2d6;border-radius:12px;background:#fbfcf8;color:var(--ink);width:100%}
+input:focus,select:focus{outline:none;border-color:var(--leaf)}
+.datos{display:grid;gap:10px;margin-top:18px}
+.datos a{display:grid;gap:2px;text-decoration:none;background:#fff;border-radius:14px;padding:15px 18px;border:1px solid #e1e8dc}
+.datos small{color:var(--soft);font-size:13px}
+.datos b{color:var(--pine);font-size:15px;overflow-wrap:anywhere}
+
+footer{background:var(--pine2);color:#cfe1d8;font-size:13px;padding:28px 0 36px;text-align:center}
+footer p{margin-bottom:10px}
+footer a{color:var(--lime)}
+
+/* Barra fija inferior */
+.fija{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;box-shadow:0 -6px 24px rgba(0,0,0,.14);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.fija a,.fija button{font:inherit;font-weight:800;font-size:14px;text-align:center;text-decoration:none;padding:13px 6px;border-radius:14px;border:0;cursor:pointer}
+.fija .w{background:var(--leaf);color:#fff}
+.fija .l{background:var(--pine);color:#fff}
+.fija .c{background:var(--lime);color:var(--pine2)}
+@media(min-width:620px){.dos{grid-template-columns:1fr 1fr}.ben{grid-template-columns:1fr 1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rev{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <b>Hugo Alarcón Ramírez</b>
+  <div class="lang"><button id="bes" class="on">ES</button><button id="ben">EN</button></div>
+</div></div>
+
+<header class="hero">
+  <div class="ring a"></div><div class="ring b"></div>
+  <div class="wrap">
+    <div class="foto"><img src="hugo.jpg" alt="Hugo Alarcón Ramírez"></div>
+    <div>
+      <p class="soy" data-es="SOY" data-en="I AM">SOY</p>
+      <h1>HUGO<span>ALARCÓN RAMÍREZ</span></h1>
+    </div>
+    <p class="rol" data-es="Consultor de atracción de nuevos clientes" data-en="New client acquisition consultant">Consultor de atracción de nuevos clientes</p>
+    <p class="gira"><span data-es="Beneficios en" data-en="Benefits in">Beneficios en</span> <em id="gira">subsidios</em></p>
+    <div class="cta">
+      <a class="btn lime" id="waHero" href="#" target="_blank" rel="noopener" data-es="Escríbeme por WhatsApp" data-en="Message me on WhatsApp">Escríbeme por WhatsApp</a>
+      <a class="btn line" href="#afiliate" data-es="Quiero afiliarme" data-en="I want to join">Quiero afiliarme</a>
+    </div>
+  </div>
+</header>
+
+<div class="cinta" aria-hidden="true"><div id="cinta"></div></div>
+
+<section><div class="wrap">
+  <h2 class="rev" data-es="Te acompañaré en el proceso" data-en="I will guide you through the process">Te acompañaré en el proceso</h2>
+  <p class="sub rev" data-es="De afiliación a la Caja de Compensación Familiar Comfenalco Antioquia." data-en="Of joining the Comfenalco Antioquia family compensation fund.">De afiliación a la Caja de Compensación Familiar Comfenalco Antioquia.</p>
+  <div class="dos">
+    <div class="card rev">
+      <h3 data-es="Afiliación de persona jurídica" data-en="Company membership">Afiliación de persona jurídica</h3>
+      <p data-es="Para tu empresa y sus trabajadores. Hugo te guía paso a paso." data-en="For your company and its employees. Hugo guides you step by step.">Para tu empresa y sus trabajadores. Hugo te guía paso a paso.</p>
+      <a class="btn pine wa" data-tipo="juridica" href="#" target="_blank" rel="noopener" data-es="Afiliar mi empresa" data-en="Enroll my company">Afiliar mi empresa</a>
+    </div>
+    <div class="card rev">
+      <h3 data-es="Afiliación de persona natural" data-en="Individual membership">Afiliación de persona natural</h3>
+      <p data-es="Para ti como persona. Pregúntale a Hugo cómo empezar." data-en="For you as an individual. Ask Hugo how to get started.">Para ti como persona. Pregúntale a Hugo cómo empezar.</p>
+      <a class="btn pine wa" data-tipo="natural" href="#" target="_blank" rel="noopener" data-es="Afiliarme yo" data-en="Enroll myself">Afiliarme yo</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="verde"><div class="wrap">
+  <h2 class="rev" data-es="Te invito a ser parte de nuestra familia" data-en="I invite you to be part of our family">Te invito a ser parte de nuestra familia</h2>
+  <p class="sub rev" data-es="Y obtener beneficios en (toca cada uno):" data-en="And get benefits in (tap each one):">Y obtener beneficios en (toca cada uno):</p>
+  <div class="ben rev" id="bens"></div>
+  <p class="mas rev" data-es="Y MUCHOS MÁS…" data-en="AND MANY MORE…">Y MUCHOS MÁS…</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="rev" data-es="Juntos construiremos un nuevo camino" data-en="Together we will build a new path">Juntos construiremos un nuevo camino</h2>
+  <p class="sub rev" data-es="De bienestar y oportunidades." data-en="Of wellbeing and opportunities.">De bienestar y oportunidades.</p>
+  <div class="volante rev"><img src="volante.jpg" alt="Volante de Hugo Alarcón Ramírez" loading="lazy"></div>
+</div></section>
+
+<section id="afiliate" style="padding-top:0"><div class="wrap">
+  <h2 class="rev" data-es="Contáctame" data-en="Contact me">Contáctame</h2>
+  <p class="sub rev" data-es="Llena estos datos y se abre WhatsApp con tu mensaje listo para Hugo." data-en="Fill this in and WhatsApp opens with your message ready for Hugo.">Llena estos datos y se abre WhatsApp con tu mensaje listo para Hugo.</p>
+  <form id="f" class="rev">
+    <label><span data-es="Tu nombre" data-en="Your name">Tu nombre</span><input id="nom" required autocomplete="name"></label>
+    <label><span data-es="¿Qué afiliación te interesa?" data-en="Which membership are you interested in?">¿Qué afiliación te interesa?</span>
+      <select id="tipo">
+        <option value="juridica" data-es="Persona jurídica (empresa)" data-en="Company">Persona jurídica (empresa)</option>
+        <option value="natural" data-es="Persona natural" data-en="Individual">Persona natural</option>
+      </select></label>
+    <label><span data-es="Municipio" data-en="Town">Municipio</span><input id="mun" autocomplete="address-level2"></label>
+    <button class="btn lime" type="submit" data-es="Enviar a Hugo por WhatsApp" data-en="Send to Hugo on WhatsApp">Enviar a Hugo por WhatsApp</button>
+  </form>
+  <div class="datos rev">
+    <a href="tel:+573168304304"><small data-es="Celular y WhatsApp" data-en="Mobile and WhatsApp">Celular y WhatsApp</small><b>316 830 4304</b></a>
+    <a href="mailto:hugo.alarcon@comfenalcoantioquia.com"><small data-es="Correo" data-en="Email">Correo</small><b>hugo.alarcon@comfenalcoantioquia.com</b></a>
+    <a href="https://www.comfenalcoantioquia.com.co" target="_blank" rel="noopener"><small data-es="Sitio oficial de la Caja" data-en="Official website of the fund">Sitio oficial de la Caja</small><b>comfenalcoantioquia.com.co</b></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p data-es="Página de contacto personal de Hugo Alarcón Ramírez. No es el sitio oficial de Comfenalco Antioquia; los trámites y condiciones de afiliación se confirman directamente con la Caja." data-en="Personal contact page of Hugo Alarcón Ramírez. This is not the official Comfenalco Antioquia website; membership procedures and conditions are confirmed directly with the fund.">Página de contacto personal de Hugo Alarcón Ramírez. No es el sitio oficial de Comfenalco Antioquia; los trámites y condiciones de afiliación se confirman directamente con la Caja.</p>
+  <p><span data-es="Hecha por" data-en="Made by">Hecha por</span> <a href="https://vibraspositivashm.com" target="_blank" rel="noopener">Vibras Positivas HM</a></p>
+</div></footer>
+
+<nav class="fija">
+  <a class="w" id="waBar" href="#" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="l" href="tel:+573168304304" data-es="Llamar" data-en="Call">Llamar</a>
+  <button class="c" id="share" data-es="Compartir" data-en="Share">Compartir</button>
+</nav>
+
+<script>
+var TEL = '573168304304';
+var lang = 'es';
+try { lang = localStorage.getItem('hugo-lang') || ((navigator.language || 'es').slice(0, 2) === 'en' ? 'en' : 'es'); } catch (e) {}
+
+var BEN = [
+  { es: ['Subsidios', 'Apoyos para ti y tu familia.'], en: ['Subsidies', 'Support for you and your family.'] },
+  { es: ['Recreación', 'Espacios para descansar y compartir.'], en: ['Recreation', 'Places to rest and enjoy together.'] },
+  { es: ['Turismo', 'Planes para viajar y conocer.'], en: ['Tourism', 'Plans to travel and explore.'] },
+  { es: ['Educación', 'Formación para crecer.'], en: ['Education', 'Training to keep growing.'] },
+  { es: ['Vivienda', 'Un camino hacia tu casa propia.'], en: ['Housing', 'A path toward your own home.'] },
+  { es: ['Crédito', 'Opciones para tus proyectos.'], en: ['Credit', 'Options for your projects.'] }
+];
+var MSG = {
+  es: { hola: 'Hola Hugo, quiero información sobre la afiliación a Comfenalco Antioquia.',
+        juridica: 'Hola Hugo, quiero afiliar mi empresa (persona jurídica) a Comfenalco Antioquia.',
+        natural: 'Hola Hugo, quiero afiliarme como persona natural a Comfenalco Antioquia.',
+        soy: 'Mi nombre es ', mun: 'Estoy en ', compartir: 'Hugo Alarcón te acompaña en tu afiliación a la caja de compensación:' },
+  en: { hola: 'Hello Hugo, I would like information about joining Comfenalco Antioquia.',
+        juridica: 'Hello Hugo, I want to enroll my company in Comfenalco Antioquia.',
+        natural: 'Hello Hugo, I want to enroll as an individual in Comfenalco Antioquia.',
+        soy: 'My name is ', mun: 'I am in ', compartir: 'Hugo Alarcón guides you through joining the compensation fund:' }
+};
+function wa(t) { return 'https://wa.me/' + TEL + '?text=' + encodeURIComponent(t); }
+
+var abierto = 0;
+function pintar() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-es]').forEach(function (el) { el.textContent = el.getAttribute('data-' + lang); });
+  document.getElementById('bes').className = lang === 'es' ? 'on' : '';
+  document.getElementById('ben').className = lang === 'en' ? 'on' : '';
+  document.getElementById('waHero').href = wa(MSG[lang].hola);
+  document.getElementById('waBar').href = wa(MSG[lang].hola);
+  document.querySelectorAll('a.wa').forEach(function (a) { a.href = wa(MSG[lang][a.dataset.tipo]); });
+
+  var caja = document.getElementById("bens");
+  caja.innerHTML = '';
+  BEN.forEach(function (b, i) {
+    var bt = document.createElement('button');
+    bt.type = 'button';
+    bt.className = i === abierto ? 'on' : '';
+    bt.innerHTML = '<span class="n">0' + (i + 1) + '</span><span class="t"></span><span class="d"></span>';
+    bt.querySelector('.t').textContent = b[lang][0];
+    bt.querySelector('.d').textContent = b[lang][1];
+    bt.onclick = function () { abierto = i; manual = true; pintar(); };
+    caja.appendChild(bt);
+  });
+
+  var tira = BEN.map(function (b) { return '<span>' + b[lang][0].toUpperCase() + '</span><span>/</span>'; }).join('');
+  document.getElementById('cinta').innerHTML = tira + tira + tira + tira;
+}
+document.getElementById('bes').onclick = function () { cambia('es'); };
+document.getElementById('ben').onclick = function () { cambia('en'); };
+function cambia(l) { lang = l; try { localStorage.setItem('hugo-lang', l); } catch (e) {} pintar(); }
+
+// Palabra que rota en la portada y beneficio que se va abriendo solo
+var k = 0, manual = false, giro = document.getElementById('gira');
+setInterval(function () {
+  giro.className = 'out';
+  setTimeout(function () {
+    k = (k + 1) % BEN.length;
+    giro.textContent = BEN[k][lang][0].toLowerCase();
+    giro.className = '';
+    if (!manual) { abierto = k; pintar(); }
+  }, 350);
+}, 2600);
+
+// Formulario: arma el mensaje y abre WhatsApp (no guarda ni envía datos a ningún servidor)
+document.getElementById('f').onsubmit = function (e) {
+  e.preventDefault();
+  var m = MSG[lang], n = document.getElementById('nom').value.trim(), mu = document.getElementById('mun').value.trim();
+  var t = m[document.getElementById('tipo').value];
+  if (n) t += '\n' + m.soy + n + '.';
+  if (mu) t += '\n' + m.mun + mu + '.';
+  window.open(wa(t), '_blank');
+};
+
+document.getElementById('share').onclick = function () {
+  var d = { title: document.title, text: MSG[lang].compartir, url: location.href };
+  if (navigator.share) { navigator.share(d).catch(function () {}); }
+  else { window.open('https://wa.me/?text=' + encodeURIComponent(d.text + ' ' + d.url), '_blank'); }
+};
+
+// Aparición al bajar
+var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+  es.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } });
+}, { threshold: .12 }) : null;
+document.querySelectorAll('.rev').forEach(function (el) { io ? io.observe(el) : el.classList.add('in'); });
+
+pintar();
+giro.textContent = BEN[0][lang][0].toLowerCase();
+if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function () {}); }
+</script>
+</body>
+</html>
